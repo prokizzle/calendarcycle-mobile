@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "CalendarCycle",
+    "slug": "calendarcycle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "calendarcycle",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.calendarcycle.mobile",
+      "infoPlist": {
+        "NSCalendarsUsageDescription": "CalendarCycle needs calendar access to display your schedule items.",
+        "NSCalendarsFullAccessUsageDescription": "CalendarCycle needs full calendar access to read events from your selected calendar."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "app.calendarcycle.mobile",
+      "permissions": [
+        "android.permission.READ_CALENDAR"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-haptics",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "CalendarCycle needs calendar access to display your schedule items."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
