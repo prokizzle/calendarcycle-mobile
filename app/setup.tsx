@@ -45,16 +45,16 @@ export default function Setup() {
         keyboardShouldPersistTaps="handled"
       >
         <Text style={[styles.title, { color: theme.text }]}>
-          Add a Calendar
+          Add a source
         </Text>
         <Text style={[styles.subtitle, { color: theme.textTertiary }]}>
-          Choose how you want to sync your schedule
+          Load tasks and events from an iCal feed or Google Calendar
         </Text>
 
         {/* iCal Feed URL */}
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: theme.textSecondary }]}>
-            PASTE FEED URL
+            ICAL FEED URL
           </Text>
           <TextInput
             style={[
@@ -65,7 +65,7 @@ export default function Setup() {
                 color: theme.text,
               },
             ]}
-            placeholder="https://calendarcycle.app/feed/..."
+            placeholder="https://example.com/feed.ics"
             placeholderTextColor={theme.textTertiary}
             value={feedUrl}
             onChangeText={setFeedUrl}
@@ -81,7 +81,7 @@ export default function Setup() {
             ]}
             onPress={handleFeedSubmit}
           >
-            <Text style={styles.buttonText}>Use Feed URL</Text>
+            <Text style={styles.buttonText}>Use iCal feed</Text>
           </Pressable>
         </View>
 

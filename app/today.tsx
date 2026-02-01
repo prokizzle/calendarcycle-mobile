@@ -143,10 +143,10 @@ export default function Today() {
               <Text style={styles.emptyIconText}>✨</Text>
             </View>
             <Text style={[styles.emptyTitle, { color: theme.text }]}>
-              No Items
+              No tasks or events
             </Text>
             <Text style={[styles.emptyMessage, { color: theme.textTertiary }]}>
-              Nothing scheduled for this day
+              No tasks or events for this day
             </Text>
           </View>
         }
@@ -164,7 +164,7 @@ export default function Today() {
         onPress={handleChangeSource}
       >
         <Text style={[styles.changeSourceText, { color: theme.accent }]}>
-          Change Calendar
+          Change source
         </Text>
       </Pressable>
     </View>

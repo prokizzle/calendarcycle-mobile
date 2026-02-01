@@ -112,7 +112,7 @@ export default function DeviceCalendars() {
           Calendar Access Required
         </Text>
         <Text style={[styles.subtitle, { color: theme.textTertiary }]}>
-          CalendarCycle needs permission to read your calendars.
+          This app needs permission to read your calendars to show your tasks and events.
         </Text>
         <Pressable
           style={({ pressed }) => [

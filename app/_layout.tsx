@@ -31,7 +31,7 @@ export default function RootLayout() {
           }}
         >
           <Stack.Screen name="index" options={{ headerShown: false }} />
-          <Stack.Screen name="setup" options={{ title: 'Add Calendar' }} />
+          <Stack.Screen name="setup" options={{ title: 'Add source' }} />
           <Stack.Screen
             name="google-calendars"
             options={{ title: 'Google Calendars' }}

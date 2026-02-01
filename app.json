@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "CalendarCycle",
-    "slug": "calendarcycle",
+    "name": "Today",
+    "slug": "today",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "calendarcycle",
+    "scheme": "today",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
@@ -15,10 +15,10 @@
     },
     "ios": {
       "supportsTablet": false,
-      "bundleIdentifier": "app.calendarcycle.mobile",
+      "bundleIdentifier": "com.today.app",
       "infoPlist": {
-        "NSCalendarsUsageDescription": "CalendarCycle needs calendar access to display your schedule items.",
-        "NSCalendarsFullAccessUsageDescription": "CalendarCycle needs full calendar access to read events from your selected calendar."
+        "NSCalendarsUsageDescription": "Today needs calendar access to display your tasks and events.",
+        "NSCalendarsFullAccessUsageDescription": "Today needs full calendar access to read events from your selected calendar."
       }
     },
     "android": {
@@ -26,7 +26,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "app.calendarcycle.mobile",
+      "package": "com.today.app",
       "permissions": [
         "android.permission.READ_CALENDAR"
       ]
@@ -38,7 +38,7 @@
       [
         "expo-calendar",
         {
-          "calendarPermission": "CalendarCycle needs calendar access to display your schedule items."
+          "calendarPermission": "Today needs calendar access to display your tasks and events."
         }
       ]
     ],
